@@ -81,11 +81,11 @@ body{
     transform: scale(1.05);
 } */
 
-.nav-bar:hover{
-    width: 400px;
-    background:linear-gradient(to right,#0F1014 40%,transparent);
-    box-shadow: none;
+.nav-bar:has(ul:hover) {
+    width: 900px;
+    background: linear-gradient(to right, rgba(15, 16, 20, 0.7) 50%, rgba(15, 16, 20, 0.5), rgba(15, 16, 20, 0.2));
 }
+
 
 .nav-bar ul li:hover{
     opacity: 1;
