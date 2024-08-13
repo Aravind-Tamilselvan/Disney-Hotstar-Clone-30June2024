@@ -595,7 +595,7 @@ body {
     position: relative;
     overflow: visible;
     animation: Background_color;
-    animation-timeline : view(200px);
+    animation-timeline : view(100px);
 }
 
 @keyframes Background_color {
