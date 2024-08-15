@@ -18,35 +18,16 @@ let Video = document.querySelector('.item.active #vid');
 let scrolllength = 290;
 let timeout = null;
 
-// document.addEventListener("visibilitychange", function () {
-//     if (document.hidden) {
-//         Video.pause();
-//         clearTimeout(timeout);
-//         image.style.display = "block";
-//         overlay1.style.display = "block";
-//         overlay2.style.display = "block";
-//         Volume.style.display = "none";
-//     }
-//     else{
-//         timeout = setTimeout(function () {
-//             Video.currentTime = 0;
-//             Video.play()
-//             image.style.display = "none";
-//             navbar.style.background = "linear-gradient(to right,rgba(15, 16, 20,0.5) 40%,rgba(15,16,20,0.3))";
-//             overlay1.style.display = "none";
-//             overlay2.style.display = "none";
-//             Volume.style.display = "block";
-//             Video.addEventListener("ended", function () {
-//                 Video.pause();
-//                 image.style.display = "block";
-//                 navbar.style.backgroundColor = "#0F1014";
-//                 overlay1.style.display = "block";
-//                 overlay2.style.display = "block";
-//                 Volume.style.display = "none";
-//             })
-//         }, 7000); 
-//     }
-// })
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        if (Video) Video.pause();
+        clearTimeout(timeout);
+        image.style.display = "block";
+        overlay1.style.display = "block";
+        overlay2.style.display = "block";
+        Volume.style.display = "none";
+    }
+})
 
 // Click Thumbnail
 thumbnails.forEach((thumbnail, index) => {
