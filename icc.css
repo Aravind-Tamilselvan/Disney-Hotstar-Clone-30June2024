@@ -76,11 +76,10 @@ body{
 }
 
 
-/* .nav-bar ul li a:active{
+.nav-bar ul li a:active{
     opacity: 1;
     transform: scale(1.05);
-} */
-
+} 
 
 .nav-bar:has(ul:hover) {
     width: 900px;
